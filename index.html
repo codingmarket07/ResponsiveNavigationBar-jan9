@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Responsive Navigation Bar</title>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, iniital-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			$(".hamburger").click(function(){
+				$(".nav-bar-right").toggleClass("active");
+			});
+		});
+	</script>
+</head>
+<body>
+	
+<div class="wrapper">
+	<div class="nav-bar">
+		<div class="hamburger"><i class="fas fa-bars"></i></div>
+		<div class="nav-bar-left">
+			<a href="#">CodingMarket</a>
+		</div>
+		<div class="nav-bar-right">
+			<ul>
+				<li><a href="#" class="active">home</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">services</a></li>
+				<li><a href="#">resume</a></li>
+				<li><a href="#">contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner-img">
+		<img src="bg-1.jpg" alt="banner-image">
+	</div>
+</div>
+
+</body>
+</html>
